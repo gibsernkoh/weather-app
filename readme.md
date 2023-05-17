@@ -8,6 +8,20 @@
 	  - ViteJs bundler
 	  - [Heroicons](https://heroicons.com/) for icon selections
 
+### To Run
+- Run `npm i`
+- Create an `.env` file and copy the below and paste it in.
+    ```
+        VITE_OPEN_WEATHER_MAP_APPID=802c67980ed29dc4d9dbd12e059dbbf2
+        VITE_OPEN_WEATHER_MAP_UNIT=metric
+        VITE_DEFAULT_CITY=
+        VITE_DEFAULT_COUNTRY_CODE=
+        VITE_DEFAULT_ICON=01d
+    ```
+- Run `npm run dev` to start dev
+- Run `npm run build` to build into production
+- Run `npm run preview`  to preview build
+
 ### Notes
 - City and Country are assumed to be unlikely to change but to maintain some flexibility, the Country is coded to to a `select` dropdown menu while the city remain as a `input` box.
 - The Dropdown country list is downloaded via npm.
